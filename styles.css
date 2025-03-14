@@ -1,0 +1,149 @@
+/* Estilos generales */
+body {
+    font-family: "Georgia", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4EAF6;
+    color: #4B0082;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #6A5ACD;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Estilos para el carrito en el menú */
+.carrito {
+    background-color: #836FFF;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 320px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.carrito h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.3em;
+}
+
+.carrito ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.carrito li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+    border-bottom: 1px solid #7159C1;
+}
+
+.carrito button {
+    background-color: #8A2BE2;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.carrito button:hover {
+    background-color: #6A0DAD;
+}
+
+/* Estilos para la sección de productos */
+main {
+    padding: 20px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.producto {
+    border: 1px solid #D8BFD8;
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.producto h3 {
+    margin: 10px 0;
+    font-size: 1.3em;
+    color: #4B0082;
+}
+
+.producto p {
+    font-size: 1.1em;
+    color: #6A5ACD;
+}
+
+.producto button {
+    background-color: #9370DB;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.producto button:hover {
+    background-color: #7B68EE;
+}
+
+/* Estilos para el servicio personalizado */
+.servicio-personalizado {
+    padding: 20px;
+    background-color: #FFF;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.servicio-personalizado h2 {
+    margin-top: 0;
+    color: #4B0082;
+}
+
+.servicio-personalizado button {
+    background-color: #6A5ACD;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.servicio-personalizado button:hover {
+    background-color: #483D8B;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floristería</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Vincular archivo CSS -->
+</head>
+<body>
+    <!-- Menú superior con el carrito -->
+    <header>
+        <h1>Floristería Ramos y Mayoreo</h1>
+        <div class="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-carrito">
+                <!-- Los productos agregados aparecerán aquí -->
+            </ul>
+            <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+        </div>
+    </header>
+
+    <!-- Sección de Productos -->
+    <main>
+        <div class="productos">
+            <div class="producto" data-id="1" data-nombre="Ramo de Rosas" data-precio="50">
+                <img src="imagenes/ramo-rosas.jpg" alt="Ramo de Rosas">
+                <h3>Ramo de Rosas</h3>
+                <p>$50</p>
+                <button onclick="agregarAlCarrito(1)">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-id="2" data-nombre="Ramo de Girasoles" data-precio="40">
+                <img src="imagenes/ramo-girasoles.jpg" alt="Ramo de Girasoles">
+                <h3>Ramo de Girasoles</h3>
+                <p>$40</p>
+                <button onclick="agregarAlCarrito(2)">Agregar al carrito</button>
+            </div>
+            <div class="producto" data-id="3" data-nombre="Ramo de Tulipanes" data-precio="60">
+                <img src="imagenes/ramo-tulipanes.jpg" alt="Ramo de Tulipanes">
+                <h3>Ramo de Tulipanes</h3>
+                <p>$60</p>
+                <button onclick="agregarAlCarrito(3)">Agregar al carrito</button>
+            </div>
+
+            <div class="producto" data-id="3" data-nombre="Ramo de Peoinas" data-precio="60">
+                <img src="imagenes/ramo-peoinas.jpg" alt="Ramo de Peoinas">
+                <h3>Ramo de Peoinas</h3>
+                <p>$300</p>
+                <button onclick="agregarAlCarrito(3)">Agregar al carrito</button>
+            </div>
+
+            <div class="producto" data-id="3" data-nombre="Paquete de Rosas" data-precio="60">
+                <img src="imagenes/rosas.jpg" alt="Paquete de Rosas">
+                <h3>Paquete de 12 Rosas</h3>
+                <p>$200</p>
+                <button onclick="agregarAlCarrito(3)">Agregar al carrito</button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Sección de Servicio Personalizado -->
+    <div class="servicio-personalizado">
+        <h2>Servicio Personalizado</h2>
+        <p>¿Necesitas un ramo personalizado? Contáctanos para más detalles.</p>
+        <button onclick="contactarServicioPersonalizado()">Contactar Servicio</button>
+    </div>
+
+    <script src="script.js"></script> <!-- Vincular archivo JavaScript -->
+</body>
+</html>
